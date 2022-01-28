@@ -365,3 +365,18 @@ html {
 
   /*---------------------------------------------------------------------------------------*/
 }
+
+/* Blocks */
+
+.block {
+  padding: 2rem;
+}
+
+.block__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.block__heading {
+  margin-top: 0;
+}

@@ -571,3 +571,31 @@ html {
 .floating-image {
   animation: float 6s ease-in-out infinite;
 }
+
+/*Toppings Section*/
+@media only screen and (min-width: 768px) {
+  #toppings {
+    margin-bottom: 8rem;
+  }
+}
+
+/*Sides Section*/
+@media only screen and (min-width: 768px) {
+  #sides {
+    margin-bottom: 8rem;
+  }
+}
+
+/*Toppings Section*/
+@media only screen and (min-width: 768px) {
+  #toppings {
+    margin-bottom: 8rem;
+  }
+}
+
+/*Sides Section*/
+@media only screen and (min-width: 768px) {
+  #sides {
+    margin-bottom: 8rem;
+  }
+}

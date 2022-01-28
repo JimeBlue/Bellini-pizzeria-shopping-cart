@@ -645,3 +645,61 @@ html {
 .bi-x-lg:hover {
   fill: #c0c0c0;
 }
+
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  color: var(--color-body);
+}
+
+.headings {
+  background-color: var(--color-primary);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.headings li {
+  font-weight: bold;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 2px 16px;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/*Table*/
+
+.inner-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.inner-container li {
+  width: 30%;
+}
+
+.item-inCart {
+  padding: 0 0.5rem;
+}
+
+.decrease:hover,
+.increase:hover {
+  opacity: 0.5;
+}
+
+.basketTotal {
+  margin-left: 1rem;
+}

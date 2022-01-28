@@ -703,3 +703,39 @@ html {
 .basketTotal {
   margin-left: 1rem;
 }
+
+@media screen and (max-width: 610px) {
+  .sm-hide {
+    display: none;
+  }
+
+  /*align price and quatity*/
+  .inner-container .price {
+    width: 50%;
+  }
+
+  .inner-container .quantity {
+    width: 10%;
+  }
+  .headings .quantity {
+    margin-right: 4rem;
+  }
+
+  .products-content .total {
+    margin-left: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 611px) {
+  .modal-content {
+    padding: 20px;
+  }
+
+  .headings {
+    padding-left: 0.2rem;
+  }
+
+  .modal-content {
+    width: 70%;
+  }
+}

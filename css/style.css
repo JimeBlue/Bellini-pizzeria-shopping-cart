@@ -739,3 +739,18 @@ html {
     width: 70%;
   }
 }
+
+/*Sticky Navbar*/
+
+/* Add some top padding to the page content to prevent sudden quick movement  */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}

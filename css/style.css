@@ -459,3 +459,96 @@ html {
     margin-right: 0.5rem;
   }
 }
+
+.menu__slice-image {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.menu-slice .grid {
+  row-gap: 4rem;
+}
+
+.block-menu .nav {
+  justify-content: center;
+  background: transparent;
+}
+
+.nav--menu .list__item {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.block-menu h3 {
+  text-transform: uppercase;
+}
+
+.block-menu {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.menu__item-content {
+  padding-bottom: 4rem;
+}
+
+.menu__item-heading {
+  text-align: center;
+  margin: 0;
+}
+
+.menu__item-price {
+  font-weight: bold;
+  margin: 0;
+}
+
+.slice__content .menu__item-price {
+  font-size: 2.6rem;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .slice .grid--1x2 {
+    column-gap: 4rem;
+  }
+
+  .slice__content {
+    align-self: center;
+  }
+
+  .menu__item-content {
+    padding-bottom: 0;
+  }
+
+  .menu__heading {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu__item-content {
+    padding-bottom: 0;
+  }
+
+  .menu__item-heading {
+    text-align: left;
+  }
+}
+
+/*SECTIONS*/
+
+.section__heading {
+  background-color: #eedc00;
+  padding: 5rem;
+  border-radius: 74% 26% 88% 12% / 26% 77% 23% 74%;
+}
+
+@media only screen and (min-width: 768px) {
+  .section__heading {
+    background-color: #eedc00;
+    padding: 5rem;
+    border-radius: 74% 26% 88% 12% / 26% 77% 23% 74%;
+    width: 50%;
+    margin: 0 auto;
+  }
+}

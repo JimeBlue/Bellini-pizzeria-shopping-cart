@@ -95,6 +95,38 @@
       </header>
       <div class="grid grid--5x2 grid--3x4" id="drinks-content"></div>
     </section>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"
+              />
+            </svg>
+          </div>
+          <ul class="inner-container headings list">
+            <li class="product">Product</li>
+            <li class="price sm-hide">Price</li>
+            <li class="quantity">
+              <span>Quantity</span>
+            </li>
+            <li class="total">Total</li>
+          </ul>
+        </div>
+        <div class="modal-body products"></div>
+        <div class="modal-footer products"></div>
+      </div>
+    </div>
     <script src="js/main.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/cart.js"></script>

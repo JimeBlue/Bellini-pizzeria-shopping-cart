@@ -23,3 +23,21 @@ $(document).ready(function () {
     }
   });
 });
+
+toTopButton = document.getElementById('to-top-button');
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    toTopButton.style.display = 'block';
+  } else {
+    toTopButton.style.display = 'none';
+  }
+}
+
+toTopButton.onclick = function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};

@@ -31,6 +31,17 @@ function cartNumbers(menuItem) {
     localStorage.setItem('cartNumbers', 1);
     document.querySelector('.cart').textContent = 1;
   }
+
+  setItems(menuItem);
+}
+
+function setItems(menuItem) {
+  menuItem.inCart = 1;
+  cartItems = {
+    [menuItem.name]: menuItem,
+  };
+
+  localStorage.setItem('productsInCart', JSON.stringify(cartItems));
 }
 
 onLoadCartNumbers();

@@ -71,3 +71,9 @@ function totalCost(menuItem) {
 }
 
 onLoadCartNumbers();
+
+document.getElementById('cart').onclick = function () {
+  let modal = document.getElementById('myModal');
+  displayCart();
+  modal.style.display = 'block';
+};

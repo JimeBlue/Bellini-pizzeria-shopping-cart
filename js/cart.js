@@ -123,6 +123,8 @@ function displayCart() {
     let modal = document.getElementById('myModal');
     modal.style.display = 'none';
   };
+
+  deleteButtons();
 }
 
 onLoadCartNumbers();
@@ -132,3 +134,30 @@ document.getElementById('cart').onclick = function () {
   displayCart();
   modal.style.display = 'block';
 };
+
+function deleteButtons() {
+  let deleteButtons = document.querySelectorAll('.bi-trash');
+  let productName;
+  let productsNumber = localStorage.getItem('cartNumbers');
+  let cartItems = localStorage.getItem('productsInCart');
+  cartItems = JSON.parse(cartItems);
+  let cartCost = localStorage.getItem('totalCost');
+
+  deleteButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      productName = btn.parentElement.textContent.trim();
+      localStorage.setItem(
+        'cartNumbers',
+        productsNumber - cartItems[productName].inCart
+      );
+      localStorage.setItem(
+        'totalCost',
+        cartCost - cartItems[productName].price * cartItems[productName].inCart
+      );
+      delete cartItems[productName];
+      localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+      displayCart();
+      onLoadCartNumbers();
+    });
+  });
+}

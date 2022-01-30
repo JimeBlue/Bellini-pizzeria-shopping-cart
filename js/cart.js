@@ -123,6 +123,8 @@ function displayCart() {
     let modal = document.getElementById('myModal');
     modal.style.display = 'none';
   };
+
+  deleteButtons();
 }
 
 onLoadCartNumbers();
@@ -132,3 +134,15 @@ document.getElementById('cart').onclick = function () {
   displayCart();
   modal.style.display = 'block';
 };
+
+function deleteButtons() {
+  let deleteButtons = document.querySelectorAll('.bi-trash');
+  let productName;
+
+  deleteButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      productName = btn.parentElement.textContent.trim();
+      console.log(productName);
+    });
+  });
+}

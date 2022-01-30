@@ -61,12 +61,16 @@ function setItems(menuItem) {
   localStorage.setItem('productsInCart', JSON.stringify(cartItems));
 }
 
-function totalCost(menuItem) {
+function totalCost(menuItem, action) {
   let cartCost = localStorage.getItem('totalCost');
 
-  if (cartCost != null) {
+  if (action == 'decrease') {
+    cartCost = parseFloat(cartCost);
+    localStorage.setItem('totalCost', cartCost - menuItem.price);
+  } else if (cartCost != null) {
     cartCost = parseFloat(cartCost);
     menuItem.price = parseFloat(menuItem.price);
+
     localStorage.setItem('totalCost', cartCost + menuItem.price);
   } else {
     localStorage.setItem('totalCost', menuItem.price);

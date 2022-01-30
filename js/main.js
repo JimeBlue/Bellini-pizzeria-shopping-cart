@@ -41,3 +41,7 @@ toTopButton.onclick = function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 };
+
+$('.btn__nav').click(function (event) {
+  event.preventDefault();
+});

@@ -9,6 +9,7 @@ for (let i = 0; i < addCart.length; i++) {
     };
 
     cartNumbers(menuItem);
+    totalCost(menuItem);
   });
 }
 
@@ -55,6 +56,18 @@ function setItems(menuItem) {
   }
 
   localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+}
+
+function totalCost(menuItem) {
+  let cartCost = localStorage.getItem('totalCost');
+
+  if (cartCost != null) {
+    cartCost = parseFloat(cartCost);
+    menuItem.price = parseFloat(menuItem.price);
+    localStorage.setItem('totalCost', cartCost + menuItem.price);
+  } else {
+    localStorage.setItem('totalCost', menuItem.price);
+  }
 }
 
 onLoadCartNumbers();

@@ -77,6 +77,7 @@ function displayCart() {
   let cartCost = localStorage.getItem('totalCost');
   cartCost = parseFloat(cartCost);
   cartCost = cartCost.toFixed(2);
+  let span = document.getElementsByClassName('close')[0];
 
   if (cartItems && productContainer) {
     productContainer.innerHTML = '';
@@ -117,6 +118,11 @@ function displayCart() {
     
     `;
   }
+
+  span.onclick = function () {
+    let modal = document.getElementById('myModal');
+    modal.style.display = 'none';
+  };
 }
 
 onLoadCartNumbers();

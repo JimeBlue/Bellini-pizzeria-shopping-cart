@@ -9,6 +9,7 @@ for (let i = 0; i < addCart.length; i++) {
     };
 
     cartNumbers(menuItem);
+    totalCost(menuItem);
   });
 }
 
@@ -55,6 +56,10 @@ function setItems(menuItem) {
   }
 
   localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+}
+
+function totalCost(menuItem) {
+  localStorage.setItem('totalCost', menuItem.price);
 }
 
 onLoadCartNumbers();

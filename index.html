@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Caveat+Brush&family=Roboto&display=swap"
       rel="stylesheet"
@@ -42,7 +44,6 @@
         <span class="icon-button__badge cart"></span>
       </a>
     </nav>
-    <!--slice section-->
     <section class="block block-menu slice content">
       <header class="block__header">
         <h1 class="menu__heading">MENU</h1>
@@ -75,30 +76,26 @@
         </div>
       </div>
     </section>
-    <!--toppings section-->
     <section class="block container block-menu" id="toppings">
       <header class="block__header price-block">
         <h2 class="section__heading" data-aos="fade-right">OUR TOPPINGS</h2>
       </header>
       <div class="grid grid--4x2 grid--2x4" id="toppings-content"></div>
     </section>
-    <!--sides section-->
     <section class="block container block-menu" id="sides">
       <header class="block__header">
         <h2 class="section__heading" data-aos="fade-right">OUR SIDES</h2>
       </header>
       <div class="grid grid--4x2 grid--2x4" id="sides-content"></div>
     </section>
-    <!--drinks section-->
     <section class="block container block-menu" id="drinks">
       <header class="block__header">
         <h2 class="section__heading" data-aos="fade-right">OUR DRINKS</h2>
       </header>
       <div class="grid grid--5x2 grid--3x4" id="drinks-content"></div>
     </section>
-    <!-- The Modal -->
+
     <div id="myModal" class="modal">
-      <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
           <div class="close">
@@ -128,7 +125,6 @@
         <div class="modal-footer products"></div>
       </div>
     </div>
-    <!--BACK TO TOP BUTTON-->
     <button id="to-top-button" title="Go to top">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -146,5 +142,10 @@
     <script src="js/main.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/cart.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

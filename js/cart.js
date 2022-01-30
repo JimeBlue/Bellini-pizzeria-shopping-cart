@@ -59,7 +59,15 @@ function setItems(menuItem) {
 }
 
 function totalCost(menuItem) {
-  localStorage.setItem('totalCost', menuItem.price);
+  let cartCost = localStorage.getItem('totalCost');
+
+  if (cartCost != null) {
+    cartCost = parseFloat(cartCost);
+    menuItem.price = parseFloat(menuItem.price);
+    localStorage.setItem('totalCost', cartCost + menuItem.price);
+  } else {
+    localStorage.setItem('totalCost', menuItem.price);
+  }
 }
 
 onLoadCartNumbers();

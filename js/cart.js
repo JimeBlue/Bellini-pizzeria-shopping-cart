@@ -194,4 +194,17 @@ function manageQuantity() {
       }
     });
   });
+
+  increaseButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      currentQuantity = btn.parentElement.querySelector('span').textContent;
+      currentProduct =
+        btn.parentElement.previousElementSibling.previousElementSibling.textContent.trim();
+      cartItems[currentProduct].inCart += 1;
+      cartNumbers(cartItems[currentProduct]);
+      totalCost(cartItems[currentProduct]);
+      localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+      displayCart();
+    });
+  });
 }

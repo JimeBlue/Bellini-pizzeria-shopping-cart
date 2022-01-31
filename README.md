@@ -13,6 +13,19 @@ Final project for the Intro to JavaScript course, part of the <a href="https://e
 
 <img src="https://user-images.githubusercontent.com/84801660/151803814-1dff57ba-d3e1-4771-917a-5878bdf532df.JPG">
 
+## The project 
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Add menu items to the cart
+- View quantity of menu items added 
+- View the cart
+- Remove items from the cart
+- Increase or decrase quantity of items in the cart
+- View the total cost of menu itmes ordered
+
 
 
 

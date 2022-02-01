@@ -29,14 +29,27 @@ Final project for the Intro to JavaScript course, part of the <a href="https://e
 ### Built with:
 - Semantic HTML5
 - CSS 3
-- CSS custom properties 
+- CSS custom properties <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/css/style.css#L1-L5"> example code </a>
 - Media Queries
-- @keyframes
+- @keyframes <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/css/style.css#L517-L527"> example code </a>
 - BEM
-- Javascript ES6
-- jQuery
+- Javascript ES6 <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/cart.js#L92"> example code </a>
+- jQuery <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/main.js#L17-L25"> example code </a>
 - AOS  - Animate On Scroll Library
-- Browser Local storage
+- Browser Local storage <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/cart.js#L166"> example code </a>
+
+### What I learned
+-	Modular Functions
+-	Identified and used basic data structures (arrays, variables, data types, expressions)
+-	DOM object structure of JavaScript in web pages
+-	How to manipulate the DOM
+-	Standard set of JavaScript commands and operators
+-	JavaScript functions and parameter-passing
+-	Event handling within JavaScript
+-	getItem(): How to get items from localStorage
+-	setItem(): How to store values in localStorage
+-	JSON
+
 
 
 

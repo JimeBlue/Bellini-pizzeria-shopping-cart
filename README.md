@@ -15,7 +15,7 @@ Final project for the Intro to JavaScript course, part of the <a href="https://e
 
 ## The project 
 
-Users should be able to:
+### Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
@@ -25,6 +25,19 @@ Users should be able to:
 - Remove items from the cart
 - Increase or decrase quantity of items in the cart
 - View the total cost of menu itmes ordered
+
+### Built with:
+- Semantic HTML5
+- CSS 3
+- CSS custom properties 
+- Media Queries
+- @keyframes
+- BEM
+- Javascript ES6
+- jQuery
+- AOS  - Animate On Scroll Library
+- Browser Local storage
+
 
 
 

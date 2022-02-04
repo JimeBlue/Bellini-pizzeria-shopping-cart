@@ -38,6 +38,39 @@ This was a final project for the Intro to JavaScript course, part of the <a href
 - AOS  - Animate On Scroll Library
 - Browser Local storage <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/cart.js#L166"> example code </a>
 
+### Featured Code
+#### Featured piece of code no.1
+Every time the user adds a menu item to the cart, the number of items in the cart is added to the local storage and the quantity of items ordered is displayed in a badge. 
+
+```javascript
+ function onLoadCartNumbers() {
+	  let prodcutNumbers = localStorage.getItem('cartNumbers');
+	
+
+	  if (prodcutNumbers) {
+	    document.querySelector('.cart').textContent = prodcutNumbers;
+	  }
+	}
+	
+
+	function cartNumbers(menuItem) {
+	  let productNumbers = localStorage.getItem('cartNumbers');
+	  productNumbers = parseInt(productNumbers);
+	
+
+	  if (productNumbers) {
+	    localStorage.setItem('cartNumbers', productNumbers + 1);
+	    document.querySelector('.cart').textContent = productNumbers + 1;
+	  } else {
+	    localStorage.setItem('cartNumbers', 1);
+	    document.querySelector('.cart').textContent = 1;
+	  }
+	}
+
+```
+
+<img src="https://user-images.githubusercontent.com/84801660/152518801-aac02b80-35af-4121-9b30-b27f9d51bf81.JPG">
+
 ### What I learned
 -	Modular Functions
 -	Identified and used basic data structures (arrays, variables, data types, expressions)

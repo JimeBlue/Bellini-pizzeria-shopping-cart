@@ -1,5 +1,5 @@
 # Bellini Pizzeria Shopping Cart
-This was a final project for the Intro to JavaScript course, part of the <a href="https://extension.ucsd.edu/courses-and-programs/front-end-development"> Front End Development Certificate </a> delivered by <a href="https://ucsd.edu/"> the University of California San Diego Extension.</a> It was a solitary project that allowed me to build a Shopping Cart for a restaurant using JavaScript and the Local Storage.
+This was a final project for the Intro to JavaScript course, part of the <a href="https://extension.ucsd.edu/courses-and-programs/front-end-development"> Front End Development Certificate </a> delivered by <a href="https://ucsd.edu/"> the University of California San Diego Extension.</a> It was a solitary project that allowed me to build a Shopping Cart for a restaurant using JavaScript, the Local Storage and vanilla CSS.
 #### Check it out! https://bellini-pizzeria-shopping-cart.netlify.app/
 
 <br />
@@ -69,7 +69,55 @@ Every time the user adds a menu item to the cart, the number of items in the car
 
 ```
 
-<img src="https://user-images.githubusercontent.com/84801660/152518801-aac02b80-35af-4121-9b30-b27f9d51bf81.JPG">
+<img src="https://user-images.githubusercontent.com/84801660/152528522-7ce3be84-59b4-4885-8d34-b8c09cefa096.JPG">
+
+#### Featured piece of code no.2
+
+This allows the user to decrease and increase the menu items quantity in the Cart Page 
+
+```javascript
+function manageQuantity() {
+  let decreaseButtons = document.querySelectorAll('.decrease');
+  let increaseButtons = document.querySelectorAll('.increase');
+  let cartItems = localStorage.getItem('productsInCart');
+  let currentQuantity = 0;
+  let currentProduct = '';
+  cartItems = JSON.parse(cartItems);
+
+  decreaseButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      currentQuantity = btn.parentElement.querySelector('span').textContent;
+
+      currentProduct =
+        btn.parentElement.previousElementSibling.previousElementSibling.textContent.trim();
+      if (cartItems[currentProduct].inCart > 1) {
+        cartItems[currentProduct].inCart -= 1;
+        cartNumbers(cartItems[currentProduct], 'decrease');
+        totalCost(cartItems[currentProduct], 'decrease');
+        localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+
+        displayCart();
+      }
+    });
+  });
+
+  increaseButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      currentQuantity = btn.parentElement.querySelector('span').textContent;
+      currentProduct =
+        btn.parentElement.previousElementSibling.previousElementSibling.textContent.trim();
+      cartItems[currentProduct].inCart += 1;
+      cartNumbers(cartItems[currentProduct]);
+      totalCost(cartItems[currentProduct]);
+      localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+      displayCart();
+    });
+  });
+}
+
+```
+
+<img src="https://user-images.githubusercontent.com/84801660/152528277-8723256c-dcc3-409f-9b93-b3c1614f4d9f.JPG">
 
 ### What I learned
 -	Modular Functions

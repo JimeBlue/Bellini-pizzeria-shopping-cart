@@ -1,5 +1,5 @@
 # Bellini Pizzeria Shopping Cart
-This was a final project for the Intro to JavaScript course, part of the <a href="https://extension.ucsd.edu/courses-and-programs/front-end-development"> Front End Development Certificate </a> delivered by <a href="https://ucsd.edu/"> the University of California San Diego Extension.</a> It was a solitary project that allowed me to build a Shopping Cart for a restaurant using JavaScript, the Local Storage and vanilla CSS.
+This was my final project for the Intro to JavaScript course, part of the <a href="https://extension.ucsd.edu/courses-and-programs/front-end-development"> Front End Development Certificate </a> delivered by <a href="https://ucsd.edu/"> the University of California San Diego Extension.</a> It was a solitary project that allowed me to build a Shopping Cart for a restaurant using JavaScript, the Local Storage and vanilla CSS.
 #### Check it out! https://bellini-pizzeria-shopping-cart.netlify.app/
 
 <br />

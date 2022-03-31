@@ -29,14 +29,14 @@ This was my final project for the Intro to JavaScript course, part of the <a hre
 ### Built with:
 - Semantic HTML5
 - CSS 3
-- CSS custom properties <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/css/style.css#L1-L5"> example code </a>
+-  <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/css/style.css#L1-L5"> CSS custom properties </a>
 - Media Queries
-- @keyframes <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/css/style.css#L517-L527"> example code </a>
+- <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/css/style.css#L517-L527"> @keyframes </a>
 - BEM
-- Javascript ES6 <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/cart.js#L92"> example code </a>
-- jQuery <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/main.js#L17-L25"> example code </a>
+-  <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/cart.js#L92"> Javascript ES6  </a>
+-  <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/main.js#L17-L25"> jQuery  </a>
 - AOS  - Animate On Scroll Library
-- Browser Local storage <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/cart.js#L166"> example code </a>
+-  <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/cart.js#L166"> Browser Local storage  </a>
 
 ### Featured Code
 #### Featured piece of code no.1

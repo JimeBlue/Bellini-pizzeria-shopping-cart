@@ -26,17 +26,6 @@ This was my final project for the Intro to JavaScript course, part of the <a hre
 - Increase or decrase quantity of items in the cart
 - View the total cost of menu itmes ordered
 
-### Built with:
-- Semantic HTML5
-- CSS 3
--  <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/css/style.css#L1-L5"> CSS custom properties </a>
-- Media Queries
-- <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/css/style.css#L517-L527"> @keyframes </a>
-- BEM
--  <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/cart.js#L92"> Javascript ES6  </a>
--  <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/main.js#L17-L25"> jQuery  </a>
-- AOS  - Animate On Scroll Library
--  <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/cart.js#L166"> Browser Local storage  </a>
 
 ### Featured Code
 #### Featured piece of code no.1
@@ -118,6 +107,18 @@ function manageQuantity() {
 ```
 
 <img src="https://user-images.githubusercontent.com/84801660/152528277-8723256c-dcc3-409f-9b93-b3c1614f4d9f.JPG">
+
+### Built with:
+- Semantic HTML5
+- CSS 3
+-  <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/css/style.css#L1-L5"> CSS custom properties </a>
+- Media Queries
+- <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/css/style.css#L517-L527"> @keyframes </a>
+- BEM
+-  <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/cart.js#L92"> Javascript ES6  </a>
+-  <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/main.js#L17-L25"> jQuery  </a>
+- AOS  - Animate On Scroll Library
+-  <a href="https://github.com/JimeBlue/Bellini-pizzeria-shopping-cart/blob/7fd4992011fa066ae36ee65705b66f1fc9276a15/js/cart.js#L166"> Browser Local storage  </a>
 
 ### What I learned
 -	Modular Functions
